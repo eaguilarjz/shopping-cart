@@ -1,0 +1,25 @@
+POST http://localhost:3000/item HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "abc",
+  "sku": "ABC123",
+  "displayName": "something",
+  "price": 10
+}
+
+###
+
+POST http://localhost:3000/item HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "def",
+  "sku": "DEF456",
+  "displayName": "something else",
+  "price": 11
+}
+
+###
+
+GET http://localhost:3000/item HTTP/1.1
